@@ -2,7 +2,7 @@ let imagens = [];
 let index = 0;
 
 function abrirModal(nome, descricao, imgs) {
-  document.getElementById("modal").style.display = "block";
+  document.getElementById("modal").style.display = "flex";
   document.getElementById("titulo").innerText = nome;
   document.getElementById("descricao").innerText = descricao;
 
@@ -39,7 +39,7 @@ function anterior() {
   index = (index - 1 + imagens.length) % imagens.length;
   renderCarrossel();
 }
-let inicio = document.querySelector("button");
+let inicio = document.getElementById("btnInicio");
 inicio.addEventListener("click", function() {
   window.location.href = "index.html";
 });
