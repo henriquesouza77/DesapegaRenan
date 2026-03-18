@@ -11,13 +11,12 @@
 <header>
     
   <h1>Catálogo</h1>
-  <button>inicio</button>
+  <button id="btnInicio">inicio</button>
 </header>
 <body>
     <p style="text-align:center; opacity:0.7; margin-top:10px;">
   Clique em um desapego para ver mais detalhes
 </p>
-</body>
 <section class="catalogo">
 
   <div class="card" onclick="abrirModal('Uno quadrado', 'Produto em ótimo estado!', 
@@ -45,11 +44,13 @@
   </div>
 
   <div class="card" onclick="abrirModal('Produto 3', 'Bem conservado!', 
-  ['https://via.placeholder.com/306',
- 'https://via.placeholder.com/307',
- 'https://via.placeholder.com/308'])">
+  ['imagens_lava/lava1.jpg',
+  'imagens_lava/lava2.jpg',
+  'imagens_lava/lava3.jpg',
+  'imagens_lava/lava4.jpg',
+  'imagens_lava/lava5.jpg',])">
 
-    <img src="https://via.placeholder.com/300">
+    <img src="imagens_lava/lava1.jpg">
     <h3>Produto 3</h3>
     <p>Descrição curta</p>
   </div>
